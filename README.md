@@ -27,7 +27,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 2. type `npm install -g @angular/cli`
 
 ---
-#Angular instructions
+#Angular setup instructions
 ** Coming soon **
 
 ## Development server
