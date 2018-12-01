@@ -10,6 +10,8 @@ import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
 import { HeaderComponent } from './header/header.component';
 import { LyricsComponent } from './lyrics/lyrics.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +23,12 @@ import { LyricsComponent } from './lyrics/lyrics.component';
     AboutComponent,
     BlogComponent,
     HeaderComponent,
-    LyricsComponent
+    LyricsComponent,
+    HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
