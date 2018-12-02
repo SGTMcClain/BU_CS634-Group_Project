@@ -9,10 +9,12 @@ import { LyricsComponent } from './lyrics/lyrics.component';
 import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
 import { MusicComponent } from './music/music.component';
 import { MerchComponent } from './merch/merch.component';
+import { ErrorPage404Component } from './error-page404/error-page404.component';
 
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  {path: 'home', component: HomeComponent},
   {path: 'about', component: AboutComponent},
   {path: 'blog', component: BlogComponent},
   {path: 'events', component: EventsComponent},
@@ -20,6 +22,8 @@ const routes: Routes = [
   {path: 'merch', component: MerchComponent},
   {path: 'music', component: MusicComponent},
   {path: 'photo-gallery', component: PhotoGalleryComponent},
+  {path: 'error-page404', component: ErrorPage404Component},
+  {path: '**', redirectTo: 'error-page404', pathMatch: 'full'},
 ];
 
 @NgModule({

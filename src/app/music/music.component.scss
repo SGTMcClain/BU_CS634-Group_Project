@@ -1,0 +1,38 @@
+.grid-container{
+    display: grid;
+    grid-template-areas: "lyrics musicPlayers";
+    grid-template-columns: 25% 75%;
+    grid-gap: 10px; 
+}
+
+@media only screen and (max-width:1025px){
+    .grid-container{
+        grid-template-columns: 100%;
+        grid-template-areas: "musicPlayers" "lyrics";
+    }
+}
+
+.lyrics{
+    grid-area: lyrics;
+}
+
+.musicPlayers{
+    grid-area: musicPlayers;
+}
+
+.video-responsive{
+    //From https://www.ostraining.com/blog/coding/responsive-videos/
+    .video-responsive{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+    }
+    .video-responsive iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+}

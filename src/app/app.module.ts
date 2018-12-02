@@ -12,6 +12,8 @@ import { HeaderComponent } from './header/header.component';
 import { LyricsComponent } from './lyrics/lyrics.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
+import { ErrorPage404Component } from './error-page404/error-page404.component';
+import { PlayersComponent } from './players/players.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { HomeComponent } from './home/home.component';
     BlogComponent,
     HeaderComponent,
     LyricsComponent,
-    HomeComponent
+    HomeComponent,
+    ErrorPage404Component,
+    PlayersComponent
   ],
   imports: [
     BrowserModule,
