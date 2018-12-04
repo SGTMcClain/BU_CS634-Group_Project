@@ -1,17 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+
 body{
     background: black;
     color: white;
+    font-family: 'Roboto', sans-serif;
+    
+    
 }
 
 h1{
-    //bangerfont
-
+    font-family: 'Bangers', cursive;
 }
 
 h2{
-    //press to start p2 font
+    font-family: 'Press Start 2P', cursive;
+    
 
 }
 
@@ -19,4 +23,11 @@ h3{
     //????
 }
 
+.center {
+    text-align: center;
+}
+
+.citation {
+    font-style: italic;
+}
 //Banger Font for Azizi Name
