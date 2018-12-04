@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, APP_BOOTSTRAP_LISTENER } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { HashLocationStrategy, LocationStrategy} from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { EventsComponent } from './events/events.component';
@@ -14,6 +16,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { ErrorPage404Component } from './error-page404/error-page404.component';
 import { PlayersComponent } from './players/players.component';
+import { platformCoreDynamic } from '@angular/platform-browser-dynamic/src/platform_core_dynamic';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +38,10 @@ import { PlayersComponent } from './players/players.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
+  ],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
+
