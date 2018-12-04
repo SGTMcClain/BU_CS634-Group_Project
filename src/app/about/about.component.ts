@@ -9,9 +9,9 @@ export class AboutComponent implements OnInit {
   name = 'app-about';
   
   constructor(private renderer: Renderer2) {
-    this.renderer.setStyle(document.body, 'background-image', '/src/assets/photos/azizi-gibson-red-bull.jpg');
+    this.renderer.setStyle(document.body, 'background-image', '/src/assets/photos/graffiti.png');
 
-   }
+  }
 
   ngOnInit() {
   }
