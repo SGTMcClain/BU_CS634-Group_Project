@@ -1,3 +1,5 @@
+@import 'src/styles.scss';
+
 .navbar{
     position: fixed;
     top: 0;
@@ -12,4 +14,10 @@
 
 .navbar-dark{
     background: rgba($color: #000000, $alpha: .1)
+}
+
+.navbar > a{
+    font-family: $bangers;
+    font-size: 1.8em;
+    
 }
