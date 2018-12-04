@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, APP_BOOTSTRAP_LISTENER } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HashLocationStrategy, LocationStrategy} from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { EventsComponent } from './events/events.component';
@@ -17,6 +18,8 @@ import { HomeComponent } from './home/home.component';
 import { ErrorPage404Component } from './error-page404/error-page404.component';
 import { PlayersComponent } from './players/players.component';
 import { platformCoreDynamic } from '@angular/platform-browser-dynamic/src/platform_core_dynamic';
+import { FooterComponent } from './footer/footer.component';
+import { AlbumDetailsComponent } from './album-details/album-details.component';
 
 
 @NgModule({
@@ -32,7 +35,9 @@ import { platformCoreDynamic } from '@angular/platform-browser-dynamic/src/platf
     LyricsComponent,
     HomeComponent,
     ErrorPage404Component,
-    PlayersComponent
+    PlayersComponent,
+    FooterComponent,
+    AlbumDetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,10 @@
+<div class="form-group center">
+  <label for="albums">Album Details</label>
+  <select class="form-control" id="albums" (change)="selectChangeHandler($event)" required>
+    <option *ngFor="let album of albums" [value]="album.details">{{album.name}}</option>
+  </select>
+  <br>
+  <div class="card">
+    <div>{{selectedAlbum}}</div>
+  </div>
+</div>

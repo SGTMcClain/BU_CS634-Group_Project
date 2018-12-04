@@ -1,0 +1,9 @@
+@import "src/styles.scss";
+
+.nav-tabs{
+    background-color: rgba($color: $aziziGray, $alpha: .9);
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus{
+    border-color: $aziziRed $aziziRed;
+}
