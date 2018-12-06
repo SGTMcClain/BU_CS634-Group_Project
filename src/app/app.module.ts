@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, APP_BOOTSTRAP_LISTENER } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { HashLocationStrategy, LocationStrategy} from '@angular/common';
+import { PathLocationStrategy, LocationStrategy} from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -44,7 +44,7 @@ import { AlbumDetailsComponent } from './album-details/album-details.component';
     AppRoutingModule
   ],
   providers: [
-    {provide: LocationStrategy, useClass: HashLocationStrategy}
+    {provide: LocationStrategy, useClass: PathLocationStrategy}
   ],
   bootstrap: [AppComponent],
 })
