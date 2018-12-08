@@ -15,7 +15,7 @@
 
 <style>
 
-body { background-color: #000000;}
+body { background-color: #ffffff;}
 
 center {width: 80%;
         padding-left: 15%;}
@@ -27,15 +27,16 @@ p { padding: 35px;
 
 h1 { font-family: bangers;
      font-size:8vw;
-     color: #ffffff; }
+     color: #cc0000; 
+     text-shadow: 2px 2px #000000;}
 
 h2 { font-family:press start p2;
      font-size:4vw;
-     color: #ffffff; }
+     color: #000000; }
 
 h3 { font-family: roboto;
      font-size:3vw;
-     color: #ffffff; }
+     color: #000000; }
 
 .grid-container {
   display: grid;
@@ -79,25 +80,29 @@ h3 { font-family: roboto;
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" color="">Search</button>
     </form>
   </div>
 </nav>
-<center>
+<div style="padding-left:10%; padding-right:10%">
   <form>
-    <h2>Concert Information Submission Form</h2>
+    <h1>Add Concert</h1>
     <div class="form-group">
-      <label for="validationTooltip01" style="color:#ffffff">Date</label>
+      <label for="validationTooltip01" style="color:#000000">Tour</label>
+      <br>
+      <select>
+        <option value="tour1">Tour 1</option>
+        <option value="tour2">Tour 2</option>
+     </select>
+    </div>
+    <div class="form-group">
+      <label for="validationTooltip01" style="color:#000000">Location</label>
       <input type="text" class="form-control" id="validationTooltip01" required>
     </div>
     <div class="form-group">
-      <label for="validationTooltip01" style="color:#ffffff">Location</label>
-      <input type="text" class="form-control" id="validationTooltip01" required>
+      <label for="validationTooltip01" style="color:#000000">Date</label>
+      <input type="date" name="concert-date">
     </div>
-    <div class="form-group">
-      <label for="validationTooltip01" style="color:#ffffff">Time</label>
-      <input type="text" class="form-control" id="validationTooltip01"  required>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary" style="background-color:#cc0000;">Add Concert</button>
   </form>
-</center>
+</div>
