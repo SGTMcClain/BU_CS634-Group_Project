@@ -25,6 +25,7 @@ import { AdminGalleryComponent } from './admin-gallery/admin-gallery.component';
 import { AdminSongEmbedComponent } from './admin-song-embed/admin-song-embed.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminNavComponent } from './admin-nav/admin-nav.component';
+import { AdminBlogComponent } from './admin-blog/admin-blog.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { AdminNavComponent } from './admin-nav/admin-nav.component';
     AdminGalleryComponent,
     AdminSongEmbedComponent,
     AdminComponent,
-    AdminNavComponent
+    AdminNavComponent,
+    AdminBlogComponent
   ],
   imports: [
     BrowserModule,

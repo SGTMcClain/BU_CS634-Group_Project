@@ -14,6 +14,7 @@ import { AdminConcertInfoComponent } from './admin-concert-info/admin-concert-in
 import { AdminGalleryComponent } from './admin-gallery/admin-gallery.component';
 import { AdminSongEmbedComponent } from './admin-song-embed/admin-song-embed.component';
 import { AdminComponent } from './admin/admin.component';
+import { AdminBlogComponent } from './admin-blog/admin-blog.component';
 
 
 const routes: Routes = [
@@ -27,6 +28,7 @@ const routes: Routes = [
   {path: 'music', component: MusicComponent},
   {path: 'photo-gallery', component: PhotoGalleryComponent},
   {path: 'admin', component: AdminComponent},
+  {path: 'admin_blog', component: AdminBlogComponent},
   {path: 'admin_concert_info', component: AdminConcertInfoComponent},
   {path: 'admin_gallery', component: AdminGalleryComponent},
   {path: 'admin_song_embed', component: AdminSongEmbedComponent},

@@ -1,0 +1,37 @@
+center {width: 80%;
+    padding-left: 15%;
+}
+
+p { padding: 35px;
+    color: #ffffff;
+    font-family: roboto;
+    font-size:2vw;
+}
+
+h1 { font-family: bangers;
+    font-size:6vw;
+    color: #cc0000; 
+    text-shadow: 2px 2px #000000;
+}
+
+h2 { font-family:press start p2;
+    font-size:4vw;
+    color: #000000;
+}
+
+h3 { font-family: roboto;
+    font-size:3vw;
+    color: #000000;
+}
+
+.grid-container {
+display: grid;
+} 
+
+button {
+    background-color:#cc0000;
+}
+
+.nav-link {
+    background-color: lightgray;
+  }

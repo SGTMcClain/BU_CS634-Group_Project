@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="card mb-4">
+      <form class="card-body">
+  
+        <h1 class="center">Add New Blog Post</h1>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" >New Blog Post</a>
+          </li>
+          <li class="nav-item disabled">
+            <a class="nav-link" >Edit Existing Blog Posts</a>
+          </li>
+        </ul>
+        <br>
+        <div class="input-group mb-3">
+          <div>
+              
+          </div>
+          <!-- Blog Photo -->
+          <div class="custom-file">
+            <input type="file" class="custome-file-input" id="inputGroupFile02">
+            <label class="custom-file-label" for="inputGroupFile02">Choose Photo</label>
+          </div>
+        </div>
+        <!-- Blog Date -->
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Date</span>
+          </div>
+          <input type="date" name="blog-date" class="form-control">
+        </div>
+
+        <!-- Blog Title -->
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Blog Title</span>
+          </div>
+          <input type="text" class="form-control">
+        </div>
+        <!-- Blog Post -->
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Blog Post</span>
+          </div>
+          <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-secondary disabled" >Save as Draft</button>
+        <button type="submit" class="btn btn-primary disabled" >Publish</button>
+      </form>
+    </div>
+  </div>
+  
