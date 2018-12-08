@@ -8,6 +8,23 @@ $aziziGray: #cccccc;
 $bangers: 'Bangers', cursive;
 $pressStart: 'Press Start 2P', cursive;
 
+@font-face{
+    font-family: 'Roboto', sans-serif;
+    src: local('Roboto'), url(/assets/fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: 'Bangers', cursive;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Bangers Regular'), local('Bangers-Regular'), url(/assets/fonts/Bangers/Bangers-Regular.ttf) format('truetype');
+}
+@font-face{
+    font-family: 'Press Start 2P', cursive;
+    src: local('Press Start 2P'), url(/assets/fonts/Press_Start_2P/PressStart2P-Regular.ttf) format('truetype');
+}
+
+
 body{
     background-color: $aziziBlack;
     background-image: url("/assets/photos/redBull.jpg");

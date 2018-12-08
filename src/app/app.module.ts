@@ -20,6 +20,11 @@ import { PlayersComponent } from './players/players.component';
 import { platformCoreDynamic } from '@angular/platform-browser-dynamic/src/platform_core_dynamic';
 import { FooterComponent } from './footer/footer.component';
 import { AlbumDetailsComponent } from './album-details/album-details.component';
+import { AdminConcertInfoComponent } from './admin-concert-info/admin-concert-info.component';
+import { AdminGalleryComponent } from './admin-gallery/admin-gallery.component';
+import { AdminSongEmbedComponent } from './admin-song-embed/admin-song-embed.component';
+import { AdminComponent } from './admin/admin.component';
+import { AdminNavComponent } from './admin-nav/admin-nav.component';
 
 
 @NgModule({
@@ -37,7 +42,12 @@ import { AlbumDetailsComponent } from './album-details/album-details.component';
     ErrorPage404Component,
     PlayersComponent,
     FooterComponent,
-    AlbumDetailsComponent
+    AlbumDetailsComponent,
+    AdminConcertInfoComponent,
+    AdminGalleryComponent,
+    AdminSongEmbedComponent,
+    AdminComponent,
+    AdminNavComponent
   ],
   imports: [
     BrowserModule,
