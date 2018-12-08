@@ -18,4 +18,12 @@ h3 { font-family: roboto;
 
 .grid-container {
   display: grid;
-} 
+}
+
+.disabled {
+  color: black;
+}
+
+.nav-link {
+  background-color: lightgray;
+}

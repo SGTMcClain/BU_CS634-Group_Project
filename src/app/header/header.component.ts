@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +9,18 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
+  @ViewChild('navbarToggler') navbarToggler:ElementRef;
+
   ngOnInit() {
   }
 
+  navBarTogglerIsVisible() {
+    return this.navbarToggler.nativeElement.offsetParent !== null;
+  }
+
+  collapseNav() {
+    if (this.navBarTogglerIsVisible()) {
+      this.navbarToggler.nativeElement.click();
+    }
+  }
 }

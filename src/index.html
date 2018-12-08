@@ -14,7 +14,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
-
+  <!-- Bootstrap Dropdown Fix -->
+  <script>
+    $(document).on('click', '.navbar-collapse', function (e) {
+      console.log(e);
+      if($(e.target).attr('class') != 'dropdown-toggle'){
+          $(".navbar-collapse").collapse('hide');
+      }
+    });
+  </script>
 </head>
 <body>
   <app-root></app-root>
