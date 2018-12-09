@@ -86,23 +86,31 @@ h3 { font-family: roboto;
 </nav>
 <div style="padding-left: 10%; padding-right: 10%;">
   <form>
-    <h1>New Music</h1>
+    <h1>Music</h1>
+    <fieldset id="group1">
+      <label for="validationTooltip01" style="color:#000000"><b>Create or Edit</b></label><br>
+      <input type="radio" name="new" value="new">New Embed<br>
+      <input type="radio" name="edit" value="edit" disabled="disabled">Edit Existing Embed<br>
+      <br>
+    </fieldset>
+    <label for="validationTooltip01" style="color:#000000"><b>Embed Type</b></label><br>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+      <label class="form-check-label" for="exampleRadios1" style="color:#000000; text-align:left;">
+        Soundcloud
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+      <label class="form-check-label" for="exampleRadios2" style="color:#000000; text-align:left;">
+        Itunes
+      </label>
+    </div>
+    <br>
     <div class="form-group">
       <label for="validationTooltip01" style="color:#000000; text-align:left;">Embed Link</label>
       <input type="text" class="form-control" id="validationTooltip01"  required>
     </div>
-  <div class="form-check">
-    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-    <label class="form-check-label" for="exampleRadios1" style="color:#000000; text-align:left;">
-      Soundcloud
-    </label>
-  </div>
-  <div class="form-check">
-    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-    <label class="form-check-label" for="exampleRadios2" style="color:#000000; text-align:left;">
-      Itunes
-    </label>
-  </div>
     <br>
     <button type="submit" class="btn btn-primary" style="background-color:#cc0000;">Add Song</button>
   </form>
