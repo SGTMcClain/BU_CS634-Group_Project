@@ -87,14 +87,24 @@ h3 { font-family: roboto;
 <div style="padding-left:10%; padding-right:10%;">
   <form>
     <br>
-    <h1>New Photo</h1>
+    <h1>Photo</h1>
+    <br>
+    <fieldset id="group1">
+      <label for="validationTooltip01" style="color:#000000"><b>Create or Edit</b></label><br>
+      <input type="radio" name="gender" value="male">New Photo<br>
+      <input type="radio" name="gender" value="female" disabled="disabled">Edit Existing Photo<br>
+      <br>
+    </fieldset>
+    <div class="form-group">
+      <label for="validationTooltip01" style="color:#000000"><b>Caption</b></label>
+      <input type="text" class="form-control" id="validationTooltip01" required>
+    </div>
+    <label for="validationTooltip01" style="color:#000000"><b>Image</b></label>
     <br>
     <div class="input-group">
       <div class="custom-file">
-        <p style="text-align:left;">Image</p>
-        <br>
         <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" required>
-        <label class="custom-file-label" for="inputGroupFile01"> Image </label>
+        <label class="custom-file-label" for="inputGroupFile01"><b>   </b> </label>
       </div>
     </div>
     <br>

@@ -86,9 +86,19 @@ h3 { font-family: roboto;
 </nav>
 <div style="padding-left:10%; padding-right:10%">
   <form>
-    <h1>Add Concert</h1>
+    <h1>Event</h1>
+    <fieldset id="group1">
+      <label for="validationTooltip01" style="color:#000000"><b>Create or Edit</b></label><br>
+      <input type="radio" name="gender" value="male">New Event<br>
+      <input type="radio" name="gender" value="female" disabled="disabled">Edit Existing Events<br>
+    </fieldset>
+    <fieldset id="group2">
+      <label for="validationTooltip01" style="color:#000000"><b>Event Type</b></label><br>
+      <input type="checkbox" name="event1" value="Concert"> Concert <br>
+      <input type="checkbox" name="event2" value="Meet & Greet"> Meet & Greet <br>
+    </fieldset>
     <div class="form-group">
-      <label for="validationTooltip01" style="color:#000000">Tour</label>
+      <label for="validationTooltip01" style="color:#000000"><b>Tour</b></label>
       <br>
       <select>
         <option value="tour1">Tour 1</option>
@@ -96,11 +106,17 @@ h3 { font-family: roboto;
      </select>
     </div>
     <div class="form-group">
-      <label for="validationTooltip01" style="color:#000000">Location</label>
+      <label for="validationTooltip01" style="color:#000000"><b>Venue</b></label>
       <input type="text" class="form-control" id="validationTooltip01" required>
     </div>
     <div class="form-group">
-      <label for="validationTooltip01" style="color:#000000">Date</label>
+      <label for="validationTooltip01" style="color:#000000"><b>City</b></label>
+      <input type="text" class="form-control" id="validationTooltip01" required>
+      <label for="validationTooltip01" style="color:#000000"><b>State</b></label>
+      <input type="text" class="form-control" id="validationTooltip01" required>
+    </div>
+    <div class="form-group">
+      <label for="validationTooltip01" style="color:#000000"><b>Date</b></label>
       <input type="date" name="concert-date">
     </div>
     <button type="submit" class="btn btn-primary" style="background-color:#cc0000;">Add Concert</button>
