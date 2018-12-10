@@ -15,6 +15,7 @@ import { AdminGalleryComponent } from './admin-gallery/admin-gallery.component';
 import { AdminSongEmbedComponent } from './admin-song-embed/admin-song-embed.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminBlogComponent } from './admin-blog/admin-blog.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 
 const routes: Routes = [
@@ -27,6 +28,7 @@ const routes: Routes = [
   {path: 'merch', component: MerchComponent},
   {path: 'music', component: MusicComponent},
   {path: 'photo-gallery', component: PhotoGalleryComponent},
+  {path: 'signIn', component: SignInComponent},
   {path: 'admin', component: AdminComponent},
   {path: 'admin_blog', component: AdminBlogComponent},
   {path: 'admin_concert_info', component: AdminConcertInfoComponent},
@@ -39,7 +41,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [],
   imports: [
-    RouterModule.forRoot(routes, {useHash: false}),
+    RouterModule.forRoot(routes, {useHash: true}),
     CommonModule
   ],
   exports: [

@@ -7,6 +7,7 @@ $aziziRed: #cc0000;
 $aziziGray: #cccccc;
 $bangers: 'Bangers', cursive;
 $pressStart: 'Press Start 2P', cursive;
+$roboto: 'Roboto', sans-serif;
 
 @font-face{
     font-family: 'Roboto', sans-serif;
@@ -22,6 +23,10 @@ $pressStart: 'Press Start 2P', cursive;
 @font-face{
     font-family: 'Press Start 2P', cursive;
     src: local('Press Start 2P'), url(/assets/fonts/Press_Start_2P/PressStart2P-Regular.ttf) format('truetype');
+}
+
+.nav-pills .active{
+    background-color: $aziziRed;
 }
 
 

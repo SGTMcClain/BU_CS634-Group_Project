@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, APP_BOOTSTRAP_LISTENER } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { PathLocationStrategy, LocationStrategy} from '@angular/common';
+import { PathLocationStrategy, HashLocationStrategy, LocationStrategy} from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -26,6 +26,7 @@ import { AdminSongEmbedComponent } from './admin-song-embed/admin-song-embed.com
 import { AdminComponent } from './admin/admin.component';
 import { AdminNavComponent } from './admin-nav/admin-nav.component';
 import { AdminBlogComponent } from './admin-blog/admin-blog.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 
 @NgModule({
@@ -49,14 +50,15 @@ import { AdminBlogComponent } from './admin-blog/admin-blog.component';
     AdminSongEmbedComponent,
     AdminComponent,
     AdminNavComponent,
-    AdminBlogComponent
+    AdminBlogComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [
-    {provide: LocationStrategy, useClass: PathLocationStrategy}
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
   bootstrap: [AppComponent],
 })

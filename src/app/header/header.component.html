@@ -32,17 +32,25 @@
         <a class="nav-link disabled" href="#">Sign-In/Register</a>
       </li>
       -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Admin Tools
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" routerLink="./admin_blog">Add New Blog Post</a>
-          <a class="dropdown-item" routerLink="./admin_concert_info">Add New Concert</a>
-          <a class="dropdown-item" routerLink="./admin_gallery">Add New Photos</a>
-          <a class="dropdown-item" routerLink="./admin_song_embed">Add Song Embeds</a>
-        </div>
+      <li *ngIf="this.user.isAuthenticated; else signIn" class="nav-item dropdown">
+        
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Admin Tools
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" routerLink="./admin_blog">Blog</a>
+            <a class="dropdown-item" routerLink="./admin_concert_info">Events</a>
+            <a class="dropdown-item" routerLink="./admin_gallery">Photos</a>
+            <a class="dropdown-item" routerLink="./admin_song_embed">Songs</a>
+            <a class="dropdown-item">Logout</a>
+          </div>
+        
       </li>
+      <ng-template #signIn>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="./signIn">Sign-In</a>
+        </li>
+      </ng-template>
       <!-- <li class="nav-item">
         <a class="nav-link disabled" href="http://127.0.0.1:8080">Disabled</a>
       </li> -->
