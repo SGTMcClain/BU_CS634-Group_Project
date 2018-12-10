@@ -1,6 +1,12 @@
-@import "src/styles.scss";
+h2{
+    font-size: 3em;
+}
 
 .note{
-    color: $aziziBlack;
+    color: black;
     font-style: italic;
+}
+
+.card-img-top{
+    image-resolution: 5%;
 }
