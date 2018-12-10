@@ -32,7 +32,7 @@
         <a class="nav-link disabled" href="#">Sign-In/Register</a>
       </li>
       -->
-      <li *ngIf="this.user.isAuthenticated; else signIn" class="nav-item dropdown">
+      <li *ngIf="isAuth; else signIn" class="nav-item dropdown">
         
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Admin Tools
@@ -42,7 +42,7 @@
             <a class="dropdown-item" routerLink="./admin_concert_info">Events</a>
             <a class="dropdown-item" routerLink="./admin_gallery">Photos</a>
             <a class="dropdown-item" routerLink="./admin_song_embed">Songs</a>
-            <a class="dropdown-item">Logout</a>
+            <a (click)="exitAdmin()" class="dropdown-item">Logout</a>
           </div>
         
       </li>

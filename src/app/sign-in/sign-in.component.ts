@@ -8,15 +8,24 @@ import { User } from '../models/user.models';
   styleUrls: ['./sign-in.component.scss']
 })
 export class SignInComponent implements OnInit {
-  user: User;
-  constructor(userService: UserService) { this.user = userService.getUser() }
+  // user: User;
+  isAuth: boolean;
 
-  toggleAuthentication(){
-    this.user.isAuthenticated = !this.user.isAuthenticated;
-    console.log(this.user.isAuthenticated);
-  }
+  constructor(private userService: UserService) {}
+
+  // toggleAuthentication(){
+  //   this.user.isAuthenticated = !this.user.isAuthenticated;
+  //   console.log(this.user.isAuthenticated);
+  // }
 
   ngOnInit() {
+    this.userService.currentAuth.subscribe(isAuth => this.isAuth = isAuth);
+  }
+
+  updateAuth(){
+
+    this.userService.trueAuth();
+    console.log('Clicked Sign In ' + this.isAuth);
   }
 
 }

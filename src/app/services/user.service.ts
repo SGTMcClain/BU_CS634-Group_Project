@@ -1,12 +1,16 @@
 import { Injectable } from '@angular/core';
 import { User } from '../models/user.models';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
-  user: User;
-  
+  private user: User = new User();
+  private isAuthenticated = new BehaviorSubject(null);
+
+  currentAuth = this.isAuthenticated.asObservable();
+
   // createUser(){
   //   console.log('Creating User');
   //   this.user = new User;
@@ -15,5 +19,13 @@ export class UserService {
 
   getUser(){ return this.user; }
 
-  constructor() { this.user = new User; }
+  constructor() {}
+
+  trueAuth() {
+    this.isAuthenticated.next(true);
+  }
+
+  falseAuth() {
+    this.isAuthenticated.next(false);
+  }
 }
