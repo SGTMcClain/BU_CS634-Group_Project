@@ -9,21 +9,30 @@
                 <a class="nav-link active" >New Photo</a>
               </li>
               <li class="nav-item disabled">
-                <a class="nav-link" >Edit Existing Photod</a>
+                <a class="nav-link" >Edit Existing Photo</a>
               </li>
       
             </ul>
-            <br>
-          <div class="input-group">
-            <div class="custom-file">
-              <p style="text-align:left;">Image</p>
-              <br>
-              <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" required>
-              <label class="custom-file-label" for="inputGroupFile01"> Image </label>
+          <br>
+          <div class="form-group">
+            <!-- Caption -->
+            <div class="input-group mb-3">
+              <div class="input-group-prepend" for="validationTooltip01" style="color:#000000">
+                <span class="input-group-text">Caption</span>
+              </div>
+              <input type="text" class="form-control" id="validationTooltip01" required>
             </div>
           </div>
-          <br>
-          <button type="submit" class="btn btn-primary disabled" style="background-color:#cc0000;">Upload</button>
+          <!-- Image -->
+          <div class="input-group mb-3">
+            <div class="input-group-prepend" for="validationTooltip01" style="color:#000000">
+              <span class="input-group-text">Image</span>
+            </div>
+                <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" required>
+                <label class="custom-file-label" for="inputGroupFile01"> Image </label>
+          </div>
+            <br>
+          <button type="button" class="btn btn-primary disabled" style="background-color:#cc0000;">Upload</button>
         </form>
   </div>
 </div>
