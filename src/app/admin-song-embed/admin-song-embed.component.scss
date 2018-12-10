@@ -1,29 +1,43 @@
-p { padding: 35px;
-    color: #ffffff;
-    font-family: roboto;
-    font-size:2vw;}
 
-h1 { font-family: bangers;
-     font-size:6vw;
-     color: #cc0000;
-     text-shadow: 2px 2px #000000; }
 
-h2 { font-family:press start p2;
-     font-size:4vw;
-     color: #ffffff; }
-
-h3 { font-family: roboto;
-     font-size:3vw;
-     color: #ffffff; }
-
-.grid-container {
-  display: grid;
+center {width: 80%;
+  padding-left: 15%;
 }
 
-.disabled {
-  color: black;
+p { padding: 35px;
+  color: #ffffff;
+  font-family: roboto;
+  font-size:2vw;
+}
+
+h1 { font-family: bangers;
+  font-size:6vw;
+  color: #cc0000; 
+  text-shadow: 2px 2px #000000;
+}
+
+
+h3 { font-family: roboto;
+  font-size:5vw;
+  color: #cc0000;
+}
+
+.grid-container {
+display: grid;
+} 
+
+button {
+  background-color:#cc0000;
 }
 
 .nav-link {
   background-color: lightgray;
+}
+
+.form-group{
+  color: black;
+}
+
+.nav-pills .active{
+  background-color: #cc0000;
 }
