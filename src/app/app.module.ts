@@ -28,6 +28,7 @@ import { AdminNavComponent } from './admin-nav/admin-nav.component';
 import { AdminBlogComponent } from './admin-blog/admin-blog.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { SignInComponent } from './sign-in/sign-in.component';
     AdminComponent,
     AdminNavComponent,
     AdminBlogComponent,
-    SignInComponent
+    SignInComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
