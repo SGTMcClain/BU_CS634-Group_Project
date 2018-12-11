@@ -16,6 +16,7 @@ import { AdminSongEmbedComponent } from './admin-song-embed/admin-song-embed.com
 import { AdminComponent } from './admin/admin.component';
 import { AdminBlogComponent } from './admin-blog/admin-blog.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 
 const routes: Routes = [
@@ -29,6 +30,7 @@ const routes: Routes = [
   {path: 'music', component: MusicComponent},
   {path: 'photo-gallery', component: PhotoGalleryComponent},
   {path: 'signIn', component: SignInComponent},
+  {path: 'signUp', component: SignUpComponent},
   {path: 'admin', component: AdminComponent},
   {path: 'admin_blog', component: AdminBlogComponent},
   {path: 'admin_concert_info', component: AdminConcertInfoComponent},

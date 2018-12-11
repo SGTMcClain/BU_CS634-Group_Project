@@ -26,6 +26,8 @@ export class SignInComponent implements OnInit {
 
     this.userService.trueAuth();
     console.log('Clicked Sign In ' + this.isAuth);
+    alert('Admin User Logged In');
+    location.href = '#';
   }
 
 }

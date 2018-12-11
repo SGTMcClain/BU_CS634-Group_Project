@@ -1,23 +1,21 @@
-
-
 center {width: 80%;
     padding-left: 15%;
 }
 
 p { padding: 35px;
     color: #ffffff;
-    font-family: Roboto;
+    font-family: roboto;
     font-size:2vw;
 }
 
-h1 { font-family: Bangers;
+h1 { font-family: bangers;
     font-size:6vw;
     color: #cc0000; 
     text-shadow: 2px 2px #000000;
 }
 
 
-h3 { font-family: Roboto;
+h3 { font-family: roboto;
     font-size:2em;
     color: #cc0000;
 }
@@ -26,8 +24,8 @@ h3 { font-family: Roboto;
 display: grid;
 } 
 
-button {
-    background-color:#cc0000;
+button.btn.btn-primary{
+    background-color:#cc0000 !important;
 }
 
 .nav-link {
@@ -40,4 +38,8 @@ button {
 
 .nav-pills .active{
     background-color: black;
+}
+
+fieldset{
+    color: black;
 }

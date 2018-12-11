@@ -37,5 +37,7 @@ export class HeaderComponent implements OnInit {
   exitAdmin(){
     this.userService.falseAuth();
     console.log("exit admin mode");
+    alert('Admin User Logged Out');
+    location.href = '#';
   }
 }
